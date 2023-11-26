@@ -1,0 +1,24 @@
+@import 'src/styles/utils';
+
+:host {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto auto;
+}
+
+.images {
+    @include flex(center, center, row);
+
+    img {
+        @include img(100%, 100%, cover, center);
+        transition: all 2s ease;
+        position: absolute;
+        top: 0;
+        mask: linear-gradient(to left, #ffffff22 0%, black 100%);
+    }
+}

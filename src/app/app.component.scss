@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Dancing+Script:wght@700&display=swap');
+@import 'src/styles/utils';
+
+.main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+
+    @media all and (orientation:landscape) {
+        display: block;
+    }
+
+    @media all and (orientation:portrait) {
+        display: none;
+    }
+}
+
+.warning {
+    background-color: $main-color;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: $white;
+    padding: 5vh;
+    box-sizing: border-box;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media all and (orientation:landscape) {
+        display: none;
+    }
+
+    @media all and (orientation:portrait) {
+        display: flex;
+    }
+
+    .icon {
+        width: 50%;
+        height: auto;
+    }
+}

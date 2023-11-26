@@ -1,0 +1,25 @@
+<ng-container *transloco="let t; read: 'cards'">
+
+    <div class="image">
+        <img src="./assets/images/mountain.png" alt="mountain">
+    </div>
+    <div class="title">{{t('title')}}</div>
+
+    <div class="info">
+        <div class="gravityButton" appGravityBtn>
+            <div class="btn" style="--color: #3ba294;">
+                <img src="./assets/images/logo.png" alt="picto">
+            </div>
+        </div>
+        <div class="info__desc">{{t('description')}}</div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="footer__txt-fr" [class.active]="currentLanguage === 'fr'" (click)="setLanguage('fr')">{{t('fr')}}
+        </div>
+        <div class="footer__txt-en" [class.active]="currentLanguage === 'en'" (click)="setLanguage('en')">{{t('en')}}
+        </div>
+    </div>
+</ng-container>

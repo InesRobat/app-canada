@@ -1,0 +1,54 @@
+@import 'src/styles/utils';
+
+:host {
+    @include flex(center, center, column);
+    width: 26vw;
+    height: 100vh;
+    padding: 0 2% 0 0;
+    box-sizing: border-box;
+    z-index: 1;
+    gap: 50px;
+}
+
+.title {
+    font-size: em(100);
+    font-weight: 600;
+}
+
+.btns {
+    @include flex(center, center, row);
+    width: 100%;
+    gap: 20px;
+
+    &__btn-fr,
+    &__btn-en {
+        @include flex(center, center, column);
+        width: get-vh(200px);
+        height: get-vh(50px);
+        font-size: 1.2rem;
+        font-weight: 600;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        padding: 1% 3%;
+        box-sizing: border-box;
+        transform: scale(1.1);
+
+        &:hover {
+            transform: scale(1.01);
+            filter: contrast(1.2);
+        }
+    }
+
+    &__btn-fr {
+        background-color: $main-color;
+        color: $white;
+        margin-right: get-vw(10px);
+    }
+
+    &__btn-en {
+        background-color: transparent;
+        border: 1px solid $main-color;
+        color: $main-color;
+    }
+}

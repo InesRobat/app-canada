@@ -1,0 +1,14 @@
+{
+  "home": {
+    "title": "Le Grand Nord Blanc",
+    "description": "Welcome to the home page!",
+    "fr": "Commencer",
+    "en": "Start"
+  },
+  "cards": {
+    "title": "Le Grand Nord Blanc",
+    "description": "Sélectionne une vidéo",
+    "fr": "Français",
+    "en": "English"
+  }
+}

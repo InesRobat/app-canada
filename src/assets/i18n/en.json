@@ -1,0 +1,14 @@
+{
+  "home": {
+    "title": "The Great White North",
+    "description": "Welcome to the home page!",
+    "fr": "Commencer",
+    "en": "Start"
+  },
+  "cards": {
+    "title": "The Great White North",
+    "description": "Select a video to watch",
+    "fr": "Français",
+    "en": "English"
+  }
+}

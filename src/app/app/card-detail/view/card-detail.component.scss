@@ -1,0 +1,7 @@
+@import 'src/styles/utils';
+
+:host {
+    @include flex(center, flex-start, column);
+    width: 100vw;
+    height: 100vh;
+}

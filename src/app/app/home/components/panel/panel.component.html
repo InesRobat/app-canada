@@ -1,0 +1,8 @@
+<ng-container *transloco="let t; read: 'home'">
+    <div class="title">{{t('title')}}</div>
+
+    <div class="btns">
+        <div class="btns__btn-fr" (click)="goToLink('dashboard', 'fr')">{{t('fr')}}</div>
+        <div class="btns__btn-en" (click)="goToLink('dashboard', 'en')">{{t('en')}}</div>
+    </div>
+</ng-container>

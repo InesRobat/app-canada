@@ -1,0 +1,15 @@
+<div class="items">
+    <div class="items__item" *ngFor="let card of cards; let i = index" (click)="goToLink(['dashboard', card.title], i)">
+        <div class="items__item__image">
+            <img [src]="card.src" alt="image">
+        </div>
+
+        <div class="items__item__btn-play" *ngFor="let btn of cards">
+            <img src="./assets/images/icon-play.png" alt="icon">
+        </div>
+
+        <div class="items__item__title">
+            <div class="items__item__title__txt">{{ card.title }}</div>
+        </div>
+    </div>
+</div>
