@@ -2,6 +2,7 @@
 
 :host {
     @include flex(flex-end, center, row);
-    height: 100vh;
     width: 100vw;
+    height: auto;
+    overflow-y: scroll;
 }

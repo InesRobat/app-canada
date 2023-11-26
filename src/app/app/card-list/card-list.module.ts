@@ -6,6 +6,7 @@ import { CardListRoutingModule } from './card-list-routing.module';
 import { CardListComponent } from './view/card-list.component';
 import { TranslocoRootModule } from 'src/app/transloco-root.module';
 import { GravityBtnDirective } from 'src/app/directives/gravity-btn.directive';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { GravityBtnDirective } from 'src/app/directives/gravity-btn.directive';
     PanelListComponent,
     CardsComponent,
     PanelListComponent,
-    GravityBtnDirective
+    GravityBtnDirective,
+    FooterComponent
   ],
   imports: [
     CommonModule,

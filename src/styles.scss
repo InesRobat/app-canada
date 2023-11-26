@@ -9,6 +9,10 @@ body {
     margin: 0;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .gravityButton {
     display: grid;
     place-items: center;

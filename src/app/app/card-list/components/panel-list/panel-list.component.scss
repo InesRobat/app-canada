@@ -63,37 +63,11 @@
     }
 }
 
-.footer {
-    @include flex(center, center, row);
-    width: 100%;
-    padding: 0 15%;
-    box-sizing: border-box;
-    gap: 10px;
-
-    &__txt-fr,
-    &__txt-en {
-        &.active {
-            position: relative;
-
-            &::after {
-                content: '';
-                display: block;
-                width: 100%;
-                height: get-vh(1px);
-                background-color: $main-color;
-                position: absolute;
-                bottom: get-vh(-5px);
-            }
-        }
-
-        &:hover {
-            cursor: pointer;
-        }
-    }
+app-footer {
+    position: absolute;
+    bottom: 0;
 
     @media screen and (min-width: 1366px) {
-        @include flex(flex-start, center, row);
-        position: absolute;
-        bottom: get-vh(20px);
+        left: get-vw(50px);
     }
 }

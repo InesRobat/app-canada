@@ -14,12 +14,5 @@
         <div class="info__desc">{{t('description')}}</div>
     </div>
 
-
-
-    <div class="footer">
-        <div class="footer__txt-fr" [class.active]="currentLanguage === 'fr'" (click)="setLanguage('fr')">{{t('fr')}}
-        </div>
-        <div class="footer__txt-en" [class.active]="currentLanguage === 'en'" (click)="setLanguage('en')">{{t('en')}}
-        </div>
-    </div>
+    <app-footer />
 </ng-container>
